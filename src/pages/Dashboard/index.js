@@ -123,11 +123,11 @@ class Dashboard extends Component {
                             </Col>
                         </Row> */}
 
-                        <Row>
+                        {/* <Row>
                             <Col lg="12">
                                 <LatestTranaction />
                             </Col>
-                        </Row>
+                        </Row> */}
                     </Container>
                 </div>
                 <Modal isOpen={this.state.modal} role="dialog" autoFocus={true} centered={true} className="exampleModal" tabindex="-1" toggle={this.togglemodal}>

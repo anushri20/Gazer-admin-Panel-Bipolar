@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 import { Card, CardBody, CardTitle, Badge, Button } from "reactstrap";
 import { Link } from "react-router-dom";
+import ProjectOverview from '../Projects/projects-overview';
 
 class LatestTranaction extends Component {
     constructor(props) {
@@ -21,7 +22,7 @@ class LatestTranaction extends Component {
     render() {
         return (
             <React.Fragment>
-                {/* <Card>
+                <Card>
                     <CardBody>
                         <CardTitle className="mb-4">
                             Latest Transaction
@@ -70,9 +71,11 @@ class LatestTranaction extends Component {
                                                     <i className={"fab " + transaction.methodIcon + " mr-1"}></i> {transaction.paymentMethod}
                                                 </td>
                                                 <td>
-                                                    <Button type="button" color="primary" size="sm" className="btn-rounded waves-effect waves-light" onClick={this.togglemodal}>
+                                                    <Link to="/projects-overview">
+                                                    <Button type="button" color="primary" size="sm" className="btn-rounded waves-effect waves-light" >
                                                         View Details
                                                     </Button>
+                                                    </Link>
                                                 </td>
                                             </tr>
                                         )
@@ -81,7 +84,7 @@ class LatestTranaction extends Component {
                             </table>
                         </div>
                     </CardBody>
-                </Card> */}
+                </Card>
             </React.Fragment>
         );
     }
